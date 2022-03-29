@@ -1,0 +1,4 @@
+1) Resume Component
+2) Hire Me Component
+3) Skills Component
+4) Header Component

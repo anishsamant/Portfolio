@@ -1,0 +1,245 @@
+.header {
+    background: rgb(13,20,129);
+    background: radial-gradient(circle, rgba(13,20,129,0.9839286056219363) 0%, rgba(57,8,118,0.7738445720084909) 100%);
+    clip-path: polygon(50% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+}
+
+.px-10 {
+    padding-inline: 70px;
+}
+
+.header-content {
+    padding-top: 50px;
+}
+
+.text-section {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.Im-text {
+    font-family: "Merriweather";
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.my-name {
+    color: #FFD700;
+    font-size: 30px;
+}
+
+.my-attributes {
+    font-family: "Ramaraja";
+    color: rgb(241, 147, 6);
+    font-size: 2.5rem;
+    min-height: 80px;
+}
+
+.btn-hire-me {
+    font-size: 1.3rem;
+    font-family: "Merriweather";
+    color: white !important;
+    background: green;
+    border-radius: 25px;
+    margin-inline: 12px;
+    padding: 5px 40px;
+    border: 2px solid white;
+    transition: all 0.3s ease-in-out;
+    animation: header-anim 1s ease-in-out infinite;
+    text-decoration: none !important;
+}
+
+.btn-hire-me:hover {
+    transform: translateY(-5px);
+    background-color: #FFD700;
+    color: #1c1c1c;
+}
+
+.btn-get-resume {
+    font-size: 1.3rem;
+    font-family: "Merriweather";
+    color: white !important;
+    background: red;
+    border-radius: 25px;
+    margin-inline: 12px;
+    padding: 5px 40px;
+    border: 2px solid white;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none !important;
+}
+
+.btn-get-resume:hover {
+    transform: translateY(-5px);
+    text-decoration: none !important;
+}
+
+.custom-img {
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    object-fit: contain;
+    border: 1px solid white;
+    margin: 20px;
+}
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+  
+@keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+}
+
+@keyframes header-anim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+   
+   /* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1199px) { 
+    .Im-text {
+        font-size: 27px;
+    }
+    
+    .my-name {
+        font-size: 27px;
+    }
+    
+    .my-attributes {
+        font-size: 2.1rem;
+        min-height: 70px;
+    }
+
+    .header-content {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+    
+    .btn-hire-me {
+        font-size: 1rem;
+        border-radius: 25px;
+        margin-inline: 15px;
+        padding: 8px 15px;
+    }
+    
+    .btn-get-resume {
+        font-size: 1rem;
+        border-radius: 25px;
+        margin-inline: 15px;
+        padding: 8px 15px;
+    }
+    
+    .custom-img {
+        width: 170px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        object-fit: contain;
+        border: 1px solid white;
+        margin: 20px;
+    }
+}
+   
+   /* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+    .Im-text {
+        font-size: 22px;
+    }
+    
+    .my-name {
+        font-size: 22px;
+    }
+    
+    .my-attributes {
+        font-size: 1.6rem;
+        min-height: 60px;
+    }
+    
+    .btn-hire-me {
+        font-size: 0.8rem;
+        border-radius: 25px;
+        margin-inline: 10px;
+        padding: 8px 10px;
+    }
+    
+    .btn-get-resume {
+        font-size: 0.8rem;
+        border-radius: 25px;
+        margin-inline: 10px;
+        padding: 8px 10px;
+    }
+    
+    .custom-img {
+        width: 170px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        object-fit: contain;
+        border: 1px solid white;
+        margin: 20px;
+    }
+}
+
+   /* Folding devices */
+@media (max-width: 300px) { 
+    .Im-text {
+        font-size: 15px;
+    }
+    
+    .my-name {
+        font-size: 15px;
+    }
+    
+    .my-attributes {
+        font-size: 1rem;
+        min-height: 40px;
+    }
+    
+    .btn-hire-me {
+        font-size: 0.5rem;
+        border-radius: 25px;
+        margin-inline: 6px;
+        padding: 8px 6px;
+    }
+    
+    .btn-get-resume {
+        font-size: 0.5rem;
+        border-radius: 25px;
+        margin-inline: 6px;
+        padding: 8px 6px;
+    }
+    
+    .custom-img {
+        width: 150px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        object-fit: contain;
+        border: 1px solid white;
+        margin: 20px;
+    }
+ }

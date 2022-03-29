@@ -1,0 +1,172 @@
+.parent {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(13,20,129);
+    background: radial-gradient(circle, rgba(13,20,129,0.9839286056219363) 0%, rgba(57,8,118,0.7738445720084909) 100%);
+    clip-path: polygon(0 0, 100% 5%, 100% 80%, 0% 100%);
+    height: 100vh;
+}
+
+.technologies-heading {
+    font-family: "Oswald";
+    font-weight: 800;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+
+.gallery {
+    position: relative;
+    transform-style: preserve-3d;
+    animation: gallery-anim 27s linear infinite;
+    margin-top: 70px;
+    height: 150px;
+    width: 150px;
+}
+
+.gallery:hover {
+    animation-play-state: paused;
+}
+
+.gallery:hover img {
+    opacity: 0.1;
+}
+
+.gallery span {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transition: all 1s;
+    transform: rotateY(calc(var(--i) * 36deg)) translateZ(400px);
+}
+
+.gallery span img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: all 0.7s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.18));
+}
+
+.gallery span img:hover {
+    cursor: pointer;
+    transition: all 0.5s;
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+@keyframes gallery-anim {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(-360deg);
+    }
+}
+   
+   /* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 1199px) { 
+    .technologies-heading {
+        font-size: 3rem;
+    }
+    
+    .gallery {
+        position: relative;
+        transform-style: preserve-3d;
+        animation: gallery-anim 27s linear infinite;
+        margin-top: 70px;
+        height: 120px;
+        width: 120px;
+    }
+
+    .tech-name {
+        font-size: 1.5rem !important;
+    }
+
+    .rating-style {
+        font-size: 1.5rem !important;
+    }
+
+    .parent {
+        height: 600px;
+    }
+
+    .gallery span {
+        transform: rotateY(calc(var(--i) * 36deg)) translateZ(35vw);
+    } 
+}
+   
+   /* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+    .technologies-heading {
+        font-size: 2.5rem;
+    }
+    
+    .gallery {
+        position: relative;
+        transform-style: preserve-3d;
+        animation: gallery-anim 27s linear infinite;
+        margin-top: 0px;
+        height: 80px;
+        width: 80px;
+    }
+
+    .tech-name {
+        font-size: 1.3rem !important;
+    }
+
+    .rating-style {
+        font-size: 1.3rem !important;
+    }
+
+    .parent {
+        height: 60vh;
+    }
+
+    .gallery span {
+        transform: rotateY(calc(var(--i) * 36deg)) translateZ(45vw);
+    } 
+}
+
+   /* Folding devices */
+@media (max-width: 300px) { 
+    .technologies-heading {
+        font-size: 2rem;
+    }
+    
+    .gallery {
+        position: relative;
+        transform-style: preserve-3d;
+        animation: gallery-anim 27s linear infinite;
+        margin-top: 0px;
+        height: 55px;
+        width: 55px;
+    }
+
+    .tech-name {
+        font-size: 1.1rem !important;
+    }
+
+    .rating-style {
+        font-size: 1.1rem !important;
+    }
+
+    .parent {
+        height: 60vh;
+    }
+
+    .gallery span {
+        transform: rotateY(calc(var(--i) * 36deg)) translateZ(45vw);
+    } 
+}
+
+
