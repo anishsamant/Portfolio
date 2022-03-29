@@ -78,7 +78,6 @@ function ContactMe() {
             process.env.REACT_APP_TEMPLATE_ID, data, 
             process.env.REACT_APP_USER_ID
         ).then((result) => {
-            document.getElementById("contact-form-id").reset();
             toast.success('Email sent successfully!', {
                 position: "top-center",
                 autoClose: 5000,
@@ -88,6 +87,7 @@ function ContactMe() {
                 draggable: true,
                 progress: undefined,
             });
+            document.getElementById("contact-form-id").reset();
         }, (error) => {
             toast.error('Email not sent. Please try again!', {
                 position: "top-center",
