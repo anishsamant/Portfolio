@@ -114,7 +114,8 @@ function ContactMe() {
                         <div className="contact-form-title center-alignment">
                             <span>Get In Touch</span>
                         </div>
-                        <form className="contact-form" onSubmit={sendEmail} id="contact-form-id"> 
+                        <form name="contact-form" className="contact-form" method="post" onSubmit={sendEmail} id="contact-form-id"> 
+                            <input type="hidden" name="form-name" value="contact-form" />
                             <div className="d-flex flex-column mt-4"> 
                                 <label className="required label-style">Name</label>
                                 <input type="text" className="form-control fields-custom-style" placeholder="Enter your name" name="from_name" required/>
