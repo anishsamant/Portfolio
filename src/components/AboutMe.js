@@ -33,7 +33,7 @@ function AboutMe() {
         {
             university: 'New York University',
             degree: 'MS - Computer Science',
-            grade: 'GPA: 4/4',
+            grade: 'GPA: 3.83/4',
             years: '2021-2023'
         },
         {
@@ -70,6 +70,15 @@ function AboutMe() {
 
     const workInfo = [
         {
+            organization: 'LedgerPrime',
+            role: 'Defi Developer Intern',
+            description: [
+                'Implemented liquidator bot for Mango Markets',
+                'Back tested the terra classic events by analysing the terra on chain data, curve transactions and wormhole activities',
+            ],
+            duration: 'Jun-2022 to Aug-2022'
+        },
+        {
             organization: 'Larsen & Toubro Infotech',
             role: 'Salesforce Developer',
             description: [
@@ -86,7 +95,7 @@ function AboutMe() {
                 'Developed a static Twitter Clone using React Native',
                 'Developed Amazon Alexa Skills for Indian Premier League(IPL) dataset using node js',
             ],
-            duration: 'Dec-17 to Feb-18'
+            duration: 'Dec-2017 to Feb-2018'
         }
     ]
 
