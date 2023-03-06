@@ -42,7 +42,7 @@
     transform-style: preserve-3d;
     transform-origin: center;
     transition: all 1s;
-    transform: rotateY(calc(var(--i) * 36deg)) translateZ(400px);
+    transform: rotateY(calc(var(--i) * 30deg)) translateZ(400px);
 }
 
 .gallery span img {
