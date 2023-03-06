@@ -10,14 +10,16 @@ function Projects() {
     const projects = [
         {
             name: 'Program Scheduler',
-            description: 'A highly customizable, UI and data intensive media program scheduler developed using LWC and Apex on the salesforce platform.',
+            description: 'A highly customizable, UI and data intensive media program scheduler developed using LWC and Apex on the salesforce platform. '+
+            'This application is for broadcasters to easily maintain their program schedules on a daily basis.'+
+            'Implemented techniques like lazy loading and structured component rendering to ensure seemless display of data and lag free user experience.',
             thumbnail: 'program-scheduler',
             link: null,
             type: 'professional' 
         },
         {
             name: 'NFT Marketplace',
-            description: 'An NFT marketplace implementing the ERC721 and ERC165 standards from scratch and a react UI for the user to interact with the smart contract.',
+            description: 'An NFT marketplace implementing the ERC721 and ERC165 standards from scratch utilizing the amazon managed blockchain and various other aws services along with a react UI for the user to interact with the smart contract.',
             thumbnail: 'nft-marketplace',
             link: 'NFTMarketplace',
             type: 'open-source' 
@@ -45,7 +47,8 @@ function Projects() {
         },
         {
             name: 'Master Data Management',
-            description: 'A master data management system developed in salesforce with mulesoft integration to collect data from multiple sources and have a single source of truth.',
+            description: 'A master data management system developed in salesforce with mulesoft integration to collect data from multiple sources and have a single source of truth.'+
+            'The project involved automating the migration of data from multiple sources to salesforce via mulesoft and creating the necessary objects and workflows in salesforce to ensure data integrity and maintain complete data history.',
             thumbnail: 'mdm',
             link: null,
             type: 'professional' 
