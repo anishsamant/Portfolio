@@ -99,9 +99,16 @@
     color: #1c1c1c;
 }
 
+.university-courses {
+    font-family: "Oswald";
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #1c1c1c;
+}
+
 .years-attended {
     font-family: "Oswald";
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: #1c1c1c;
     padding: 10px 10px;
     border-radius: 20px;
@@ -167,7 +174,7 @@
     }
     
     .years-attended {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         padding: 5px 5px;
     }
     
@@ -242,9 +249,13 @@
     .university-grade {
         font-size: 0.7rem;
     }
+
+    .university-courses {
+        font-size: 0.7rem;
+    }
     
     .years-attended {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         padding: 5px 5px;
     }
     
@@ -319,9 +330,13 @@
     .university-grade {
         font-size: 0.6rem;
     }
+
+    .university-courses {
+        font-size: 0.6rem;
+    }
     
     .years-attended {
-        font-size: 0.5rem;
+        font-size: 0.4rem;
         padding: 5px 5px;
     }
     

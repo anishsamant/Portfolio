@@ -34,13 +34,15 @@ function AboutMe() {
             university: 'New York University',
             degree: 'MS - Computer Science',
             grade: 'GPA: 3.81/4',
-            years: '2021-2023'
+            years: 'Sept 21 - May 23',
+            courses: 'Blockchain, Cloud Computing, Big Data, Algorithms, Machine Learning, Databases, Artificial Intelligence'
         },
         {
             university: 'Pune University',
             degree: 'BE - Computer Engineering',
             grade: 'GPA: 8.72/10',
-            years: '2015-2019'
+            years: 'Aug 15 - Jun 19',
+            courses: 'Discrete Mathematics, Web Technologies, Algorithms, Computer Architecture, Software Engineering, Object Oriented Programming'
         }
     ];
 
@@ -57,6 +59,9 @@ function AboutMe() {
                     </span>
                     <span className="university-grade">
                         {education.grade}
+                    </span>
+                    <span className="university-courses">
+                        Courses: {education.courses}
                     </span>
                 </div>
                 <div>
@@ -76,7 +81,7 @@ function AboutMe() {
                 'Developed liquidator bot for compound finance and mango markets with flash loans and flashbots integration.',
                 'Studied the terra/USD debacle events by analyzing the terra on chain data, curve transactions and wormhole activities.',
             ],
-            duration: 'Jun-2022 to Aug-2022'
+            duration: 'Jun 22 - Aug 22'
         },
         {
             organization: 'Larsen & Toubro Infotech',
@@ -86,7 +91,7 @@ function AboutMe() {
                 'Optimized application performance by restructuring the components, achieving a 60% reduction in initial load and component rendering time.',
                 'Implemented a master data management solution with mulesoft and salesforce integration.'
             ],
-            duration: 'Aug-2019 to Aug-2021'
+            duration: 'Aug 19 - Aug 21'
         },
         {
             organization: 'Hasura Technologies',
@@ -95,7 +100,7 @@ function AboutMe() {
                 'Developed a static Twitter Clone using React Native.',
                 'Developed Amazon Alexa Skills for Indian Premier League(IPL) dataset using node js.',
             ],
-            duration: 'Dec-2017 to Feb-2018'
+            duration: 'Dec 17 - Feb 18'
         }
     ]
 
