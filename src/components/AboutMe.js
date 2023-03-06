@@ -33,7 +33,7 @@ function AboutMe() {
         {
             university: 'New York University',
             degree: 'MS - Computer Science',
-            grade: 'GPA: 3.83/4',
+            grade: 'GPA: 3.81/4',
             years: '2021-2023'
         },
         {
@@ -73,8 +73,8 @@ function AboutMe() {
             organization: 'LedgerPrime',
             role: 'Defi Developer Intern',
             description: [
-                'Implemented liquidator bot for Mango Markets',
-                'Back tested the terra classic events by analysing the terra on chain data, curve transactions and wormhole activities',
+                'Developed liquidator bot for compound finance and mango markets with flash loans and flashbots integration.',
+                'Studied the terra/USD debacle events by analyzing the terra on chain data, curve transactions and wormhole activities.',
             ],
             duration: 'Jun-2022 to Aug-2022'
         },
@@ -82,9 +82,9 @@ function AboutMe() {
             organization: 'Larsen & Toubro Infotech',
             role: 'Salesforce Developer',
             description: [
-                'Developed highly customization, UI and data intensive applications using LWC and Apex on salesforce platform',
-                'Optimized application performance by reducing initial load time and component rendering, enhancing the overall performance by 50%',
-                'Developed a master data management solution with mulesoft integration in salesforce'
+                'Developed highly customizable, data intensive applications with complex UI on the salesforce platform.',
+                'Optimized application performance by restructuring the components, achieving a 60% reduction in initial load and component rendering time.',
+                'Implemented a master data management solution with mulesoft and salesforce integration.'
             ],
             duration: 'Aug-2019 to Aug-2021'
         },
@@ -92,8 +92,8 @@ function AboutMe() {
             organization: 'Hasura Technologies',
             role: 'Product Development Fellow',
             description: [
-                'Developed a static Twitter Clone using React Native',
-                'Developed Amazon Alexa Skills for Indian Premier League(IPL) dataset using node js',
+                'Developed a static Twitter Clone using React Native.',
+                'Developed Amazon Alexa Skills for Indian Premier League(IPL) dataset using node js.',
             ],
             duration: 'Dec-2017 to Feb-2018'
         }
@@ -151,7 +151,7 @@ function AboutMe() {
         <div className="aboutme-section d-flex flex-column" id="aboutme">
             <span className="aboutme-heading">ABOUT ME</span>
             <div className="aboutme-container-style row">
-                <div className="aboutme-left-section d-flex flex-row px-0 shadow-lg col-md-4 col-lg-4 col-xl-4">
+                <div className="aboutme-left-section d-flex flex-row px-0 shadow-lg col-md-2 col-lg-2 col-xl-2">
                     <div className="d-flex flex-column bg-new text-white">
                         <span className="icons-span">
                             <FontAwesomeIcon icon={faUser} />
@@ -173,7 +173,7 @@ function AboutMe() {
                         <span className={interests===false? "aboutme-options-items" : "selected aboutme-options-items"} onClick={() => changeState(setInterests, true)}>Interests</span>
                     </div>
                 </div>
-                <div className="aboutme-right-section col-md-8 col-lg-8 col-xl-8">
+                <div className="aboutme-right-section col-md-10 col-lg-10 col-xl-10">
                     {intro === true &&
                         <span className="d-flex flex-column mx-2">
                             <span className="about-me-intro-heading">

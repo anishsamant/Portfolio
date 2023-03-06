@@ -90,7 +90,6 @@
     font-size: 0.8rem;
     font-weight: 800;
     color: #1c1c1c;
-    text-transform: uppercase;
 }
 
 .university-grade {
@@ -101,9 +100,8 @@
 }
 
 .years-attended {
-    font-family: monospace;
+    font-family: "Oswald";
     font-size: 1rem;
-    background: #FFD700;
     color: #1c1c1c;
     padding: 10px 10px;
     border-radius: 20px;
