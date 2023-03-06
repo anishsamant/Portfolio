@@ -1,6 +1,6 @@
 # Website
 
-Click [here](anishsamant.netlify.app) to visit portfolio
+Click [here](https://anishsamant.netlify.app) to visit portfolio
 
 # Getting Started with Create React App
 
