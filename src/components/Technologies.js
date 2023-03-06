@@ -28,6 +28,8 @@ function Technologies() {
             case 'salesforce': rat = 4.5; break;
             case 'blockchain': rat = 4.5; break;
             case 'git': rat = 4; break;
+            case 'aws': rat = 4; break;
+            case 'databases': rat = 4; break;
             default: break;
         }
         setRating(rat);
