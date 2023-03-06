@@ -40,7 +40,7 @@ function Technologies() {
         setTechStack("");
     }
 
-    const skills = ['javascript', 'solidity', 'cpp', 'java', 'python', 'react', 'lwc', 'salesforce', 'blockchain', 'git'];
+    const skills = ['javascript', 'solidity', 'cpp', 'java', 'python', 'react', 'lwc', 'salesforce', 'blockchain', 'git', 'aws', 'databases'];
     const items = [];
 
     for (const [index, value] of skills.entries()) {
