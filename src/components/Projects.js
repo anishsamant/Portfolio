@@ -19,7 +19,7 @@ function Projects() {
             name: 'NFT Marketplace',
             description: 'An NFT marketplace implementing the ERC721 and ERC165 standards from scratch and a react UI for the user to interact with the smart contract.',
             thumbnail: 'nft-marketplace',
-            link: null,
+            link: 'NFTMarketplace',
             type: 'open-source' 
         },
         {
