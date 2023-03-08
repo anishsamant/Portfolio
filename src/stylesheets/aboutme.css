@@ -87,21 +87,21 @@
 
 .university-degree {
     font-family: "Nunito";
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 800;
     color: #1c1c1c;
 }
 
 .university-grade {
     font-family: "Nunito";
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 800;
     color: #1c1c1c;
 }
 
 .university-courses {
     font-family: "Nunito";
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 800;
     color: #1c1c1c;
 }
@@ -243,15 +243,15 @@
     }
     
     .university-degree {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     
     .university-grade {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .university-courses {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     
     .years-attended {
@@ -324,15 +324,15 @@
     }
     
     .university-degree {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
     
     .university-grade {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     .university-courses {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
     
     .years-attended {
