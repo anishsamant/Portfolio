@@ -79,35 +79,35 @@
 }
 
 .university-name {
-    font-family: "Oswald";
+    font-family: "Nunito";
     color:rgb(138, 3, 248);
     font-size: 1.4rem;
     font-weight: 800;
 }
 
 .university-degree {
-    font-family: "Oswald";
+    font-family: "Nunito";
     font-size: 0.8rem;
     font-weight: 800;
     color: #1c1c1c;
 }
 
 .university-grade {
-    font-family: "Oswald";
+    font-family: "Nunito";
     font-size: 0.8rem;
     font-weight: 800;
     color: #1c1c1c;
 }
 
 .university-courses {
-    font-family: "Oswald";
+    font-family: "Nunito";
     font-size: 0.8rem;
     font-weight: 800;
     color: #1c1c1c;
 }
 
 .years-attended {
-    font-family: "Oswald";
+    font-family: "Nunito";
     font-size: 0.8rem;
     color: #1c1c1c;
     padding: 10px 10px;
@@ -116,13 +116,13 @@
 
 .organization-name {
     color:rgb(138, 3, 248);
-    font-family: "Oswald";
+    font-family: "Nunito";
     font-size: 1.4rem;
     font-weight: 800;
 }
 
 .position {
-    font-family: "Oswald";
+    font-family: "Nunito";
     font-size: 1rem;
     font-weight: 800;
     color: #1c1c1c;
