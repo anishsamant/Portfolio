@@ -10,45 +10,57 @@ function Projects() {
     const projects = [
         {
             name: 'Program Scheduler',
-            description: 'A highly customizable, UI and data intensive media program scheduler developed using LWC and Apex on the salesforce platform. '+
-            'This application is for broadcasters to easily maintain their program schedules on a daily basis. '+
-            'Implemented techniques like lazy loading and structured component rendering to ensure seemless display of data and lag free user experience.',
+            description: [
+                'A highly customizable, UI and data intensive media program scheduler developed using LWC and Apex on the salesforce platform. ',
+                'This application is for broadcasters to easily maintain their program schedules on a daily basis. ',
+                'Implemented techniques like lazy loading and structured component rendering to ensure seemless display of data and lag free user experience.'
+            ],
             thumbnail: 'program-scheduler',
             link: null,
             type: 'professional' 
         },
         {
             name: 'NFT Marketplace',
-            description: 'An NFT marketplace implementing the ERC721 and ERC165 standards from scratch utilizing the amazon managed blockchain and various other aws services along with a react UI for the user to interact with the smart contract.',
+            description: [
+                'An NFT marketplace implementing the ERC721 and ERC165 standards from scratch utilizing the amazon managed blockchain and various other aws services along with a react UI for the user to interact with the smart contract.'
+            ],
             thumbnail: 'nft-marketplace',
             link: 'NFTMarketplace',
             type: 'open-source' 
         },
         {
             name: 'Blockchain Based Crowdfunding',
-            description: 'A Blockchain based crowdfunding website for creating campaigns, contributing to campaigns and submitting eth withdrawal requests, with a react UI for the user to interact with the smart contract.',
+            description: [
+                'A Blockchain based crowdfunding website for creating campaigns, contributing to campaigns and submitting eth withdrawal requests, with a react UI for the user to interact with the smart contract.'
+            ],
             thumbnail: 'crowdfunding',
             link: 'BlockchainKickstarterApp',
             type: 'open-source' 
         },
         {
             name: 'Photo Filter App',
-            description: 'An android application that applies 4 basic filters (brightness, saturation, contrast and vignette) on any selected image and stores the filtered images in localstorage',
+            description: [
+                'An android application that applies 4 basic filters (brightness, saturation, contrast and vignette) on any selected image and stores the filtered images in localstorage'
+            ],
             thumbnail: 'photo-filter',
             link: 'Photo-Filter-App',
             type: 'open-source' 
         },
         {
             name: 'Top News App',
-            description: 'An android application that makes use of the hackernews api to display the current top 20 trending news',
+            description: [
+                'An android application that makes use of the hackernews api to display the current top 20 trending news'
+            ],
             thumbnail: 'top-news',
             link: 'News-Reader-App',
             type: 'open-source' 
         },
         {
             name: 'Master Data Management',
-            description: 'A master data management system developed in salesforce with mulesoft integration to collect data from multiple sources and have a single source of truth. '+
-            'The project involved automating the migration of data from multiple sources to salesforce via mulesoft and creating the necessary objects and workflows in salesforce to ensure data integrity and maintain complete data history.',
+            description: [
+                'A master data management system developed in salesforce with mulesoft integration to collect data from multiple sources and have a single source of truth. ',
+                'The project involved automating the migration of data from multiple sources to salesforce via mulesoft and creating the necessary objects and workflows in salesforce to ensure data integrity and maintain complete data history.'
+            ],
             thumbnail: 'mdm',
             link: null,
             type: 'professional' 
@@ -56,7 +68,13 @@ function Projects() {
     ]
     
     const items = [];
-    projects.forEach(project => {
+    projects.forEach((project, index) => {
+        let tasks = [];
+        project.description.forEach((task, index) => {
+            tasks.push(
+                <li key={index}>{task}</li>
+            )
+        })
         const url = `/assets/projects/${project.thumbnail}.jpg`;
         const projectLink = `${baseGithubUrl}${project.link}`;
         const displayText = project.link? 
@@ -81,7 +99,9 @@ function Projects() {
                     <MDBCardBody>
                         <MDBCardTitle className="projects-card-title">{project.name}</MDBCardTitle>
                         <MDBCardText className="projects-card-text">
-                            {project.description}
+                            <ul>
+                                {tasks}
+                            </ul>
                         </MDBCardText>
                     </MDBCardBody>
                     <MDBCardFooter className="projects-card-footer">
