@@ -72,7 +72,7 @@ function Projects() {
         let tasks = [];
         project.description.forEach((task, index) => {
             tasks.push(
-                <li key={index}>{task}</li>
+                <li style={textAlign = "left"} key={index}>{task}</li>
             )
         })
         const url = `/assets/projects/${project.thumbnail}.jpg`;
