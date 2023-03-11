@@ -31,7 +31,8 @@ function Projects() {
         {
             name: 'Blockchain Based Crowdfunding',
             description: [
-                'A Blockchain based crowdfunding website for creating campaigns, contributing to campaigns and submitting eth withdrawal requests, with a react UI for the user to interact with the smart contract.'
+                'A Blockchain based crowdfunding website for creating campaigns, contributing to campaigns and submitting eth withdrawal requests, with a react UI for the user to interact with the smart contract.',
+                'Ensures complete transparency with increased security and efficiency, allowing the funding to be generated from a global audience.'
             ],
             thumbnail: 'crowdfunding',
             link: 'BlockchainKickstarterApp',
@@ -62,6 +63,16 @@ function Projects() {
                 'The project involved automating the migration of data from multiple sources to salesforce via mulesoft and creating the necessary objects and workflows in salesforce to ensure data integrity and maintain complete data history.'
             ],
             thumbnail: 'mdm',
+            link: null,
+            type: 'professional' 
+        },
+        {
+            name: 'Liquidator Bots',
+            description: [
+                'Developed liquidator bots for the compound finance and mango markets using solidity. ',
+                'Implemented flashswap and flashbot integration to ensure maximum possible profitability from the trade.'
+            ],
+            thumbnail: 'liquidator',
             link: null,
             type: 'professional' 
         },
