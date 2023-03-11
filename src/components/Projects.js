@@ -32,7 +32,8 @@ function Projects() {
         {
             name: 'NFT Marketplace',
             description: [
-                'An NFT marketplace implementing the ERC721 and ERC165 standards from scratch utilizing the amazon managed blockchain and various other aws services along with a react UI for the user to interact with the smart contract.'
+                'An NFT marketplace implementing the ERC721 and ERC165 standards from scratch utilizing the amazon managed blockchain and various other aws services along with a react UI for the user to interact with the smart contract.',
+                'Recognizes and connects to browser injected web3 wallets such as metamask.'
             ],
             thumbnail: 'nft-marketplace',
             link: 'NFTMarketplace',
@@ -61,7 +62,7 @@ function Projects() {
         {
             name: 'Photo Filter App',
             description: [
-                'An android application that applies 4 basic filters (brightness, saturation, contrast and vignette) on any selected image and stores the filtered images in localstorage'
+                'An android application that applies 4 basic filters (brightness, saturation, contrast and vignette) on any selected image and stores the filtered images in localstorage.',
             ],
             thumbnail: 'photo-filter',
             link: 'Photo-Filter-App',
