@@ -22,7 +22,6 @@ function Projects() {
             name: 'Program Scheduler',
             description: [
                 'A highly customizable, UI and data intensive media program scheduler developed using LWC and Apex on the salesforce platform. ',
-                'This application is for broadcasters to easily maintain their program schedules on a daily basis. ',
                 'Implemented techniques like lazy loading and structured component rendering to ensure seemless display of data and lag free user experience.'
             ],
             thumbnail: 'program-scheduler',
