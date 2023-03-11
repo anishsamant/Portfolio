@@ -22,8 +22,9 @@ function AboutMe() {
     const introText = [];
     const introText2 = [];
     introText.push("I'm a programmer by profession based out of New York City. ");
-    introText.push('My passion for technology, blockchain, finance and defi build the foundation for my desire to keep exploring new advancements in the tech space. ');
-    introText.push("I specialize in full stack development, salesforce development and blockchain development. ");
+    introText.push('My passion for technology, blockchain and finance build the foundation for my desire to keep exploring new advancements in the tech space. ');
+    introText.push("I specialize in full stack, salesforce and blockchain development. ");
+    introText.push("I aspire to build scalable and customizable solutions that can help businesses manage their customer relationships more effectively.")
     introText2.push("I am keen on connecting with like minded people. ");
     introText2.push("Head to the contact me section and feel free to drop me an email or connect via my social media handles. ");
     introText2.push("Looking forward to connecting with you all. 🍻");
