@@ -9,6 +9,16 @@ function Projects() {
     const baseGithubUrl = 'https://github.com/anishsamant/';
     const projects = [
         {
+            name: 'Liquidator Bots',
+            description: [
+                'Developed liquidator bots for the compound finance and mango markets using solidity. ',
+                'Implemented flashswap and flashbot integration to ensure maximum possible profitability from the trade.'
+            ],
+            thumbnail: 'liquidator',
+            link: null,
+            type: 'professional' 
+        },
+        {
             name: 'Program Scheduler',
             description: [
                 'A highly customizable, UI and data intensive media program scheduler developed using LWC and Apex on the salesforce platform. ',
@@ -39,24 +49,6 @@ function Projects() {
             type: 'open-source' 
         },
         {
-            name: 'Photo Filter App',
-            description: [
-                'An android application that applies 4 basic filters (brightness, saturation, contrast and vignette) on any selected image and stores the filtered images in localstorage'
-            ],
-            thumbnail: 'photo-filter',
-            link: 'Photo-Filter-App',
-            type: 'open-source' 
-        },
-        {
-            name: 'Top News App',
-            description: [
-                'An android application that makes use of the hackernews api to display the current top 20 trending news'
-            ],
-            thumbnail: 'top-news',
-            link: 'News-Reader-App',
-            type: 'open-source' 
-        },
-        {
             name: 'Master Data Management',
             description: [
                 'A master data management system developed in salesforce with mulesoft integration to collect data from multiple sources and have a single source of truth. ',
@@ -67,14 +59,13 @@ function Projects() {
             type: 'professional' 
         },
         {
-            name: 'Liquidator Bots',
+            name: 'Photo Filter App',
             description: [
-                'Developed liquidator bots for the compound finance and mango markets using solidity. ',
-                'Implemented flashswap and flashbot integration to ensure maximum possible profitability from the trade.'
+                'An android application that applies 4 basic filters (brightness, saturation, contrast and vignette) on any selected image and stores the filtered images in localstorage'
             ],
-            thumbnail: 'liquidator',
-            link: null,
-            type: 'professional' 
+            thumbnail: 'photo-filter',
+            link: 'Photo-Filter-App',
+            type: 'open-source' 
         },
     ]
     
